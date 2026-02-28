@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoftEPay | Secure & Modern Payment Gateway</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #0066ff;
+            --secondary-color: #00d2ff;
+            --dark-color: #1a1a2e;
+            --light-bg: #f4f7fe;
+            --accent-color: #ff3e6c;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', 'Hind Siliguri', sans-serif;
+        }
+
+        body {
+            background-color: var(--light-bg);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--dark-color) 0%, #16213e 100%);
+            padding: 100px 20px;
+            text-align: center;
+            color: white;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, #fff, var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            color: #ccc;
+        }
+
+        /* How it Works */
+        .features {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-card i {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 15px;
+            color: var(--dark-color);
+        }
+
+        /* Pricing Plan Section */
+        .pricing {
+            background-color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .section-title {
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--dark-color);
+        }
+
+        .price-container {
+            max-width: 400px;
+            margin: 0 auto;
+            background: linear-gradient(145deg, #ffffff, #f0f0f0);
+            border: 2px solid var(--primary-color);
+            border-radius: 30px;
+            padding: 50px;
+            position: relative;
+            box-shadow: 0 20px 40px rgba(0, 102, 255, 0.1);
+        }
+
+        .badge {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--accent-color);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .price-val {
+            font-size: 4rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .price-val span {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .plan-features {
+            list-style: none;
+            margin: 30px 0;
+            text-align: left;
+        }
+
+        .plan-features li {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .plan-features li i {
+            color: #2ecc71;
+            margin-right: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 10px 20px rgba(0, 102, 255, 0.3);
+        }
+
+        .btn:hover {
+            background: #0052cc;
+            transform: scale(1.05);
+        }
+
+        footer {
+            padding: 40px;
+            text-align: center;
+            background: var(--dark-color);
+            color: #888;
+        }
+
+        footer b { color: #fff; }
+
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <h1>SoftEPay Gateway</h1>
+        <p>বাংলাদেশের আধুনিক এবং দ্রুততম পেমেন্ট গেটওয়ে সলিউশন। আপনার ব্যবসার লেনদেন হোক আরও সহজ, নিরাপদ এবং স্মার্ট।</p>
+        <div class="header-logo" style="font-size: 2rem; font-weight: bold;">
+            <i class="fas fa-bolt" style="color: var(--secondary-color);"></i> SoftEPay
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <i class="fas fa-shield-halved"></i>
+            <h3>নিরাপদ লেনদেন</h3>
+            <p>আমাদের উন্নত এনক্রিপশন প্রযুক্তির মাধ্যমে প্রতিটি পেমেন্ট ১০০% সুরক্ষিত এবং এনক্রিপ্টেড থাকে।</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-gauge-high"></i>
+            <h3>সুপার ফাস্ট সেটআপ</h3>
+            <p>খুব দ্রুত আপনার ওয়েবসাইট বা অ্যাপের সাথে আমাদের API ইন্টিগ্রেট করুন এবং পেমেন্ট গ্রহণ শুরু করুন।</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-headset"></i>
+            <h3>২৪/৭ কাস্টমার সাপোর্ট</h3>
+            <p>যেকোনো টেকনিক্যাল প্রয়োজনে আমাদের টিম সব সময় আপনার পাশে আছে। নিরবচ্ছিন্ন সেবা আমাদের প্রতিশ্রুতি।</p>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <div class="section-title">
+            <h2>আপনার জন্য সেরা অফার</h2>
+            <p>লিমিটেড সময়ের জন্য আমাদের স্পেশাল প্যাকেজ</p>
+        </div>
+
+        <div class="price-container">
+            <div class="badge">Most Popular</div>
+            <h3>Starter Plan</h3>
+            <div class="price-val">৳৯৯ <span>/ ৩০ দিন</span></div>
+            
+            <ul class="plan-features">
+                <li><i class="fas fa-check-circle"></i> আনলিমিটেড পেমেন্ট রিকোয়েস্ট</li>
+                <li><i class="fas fa-check-circle"></i> রিয়েল-টাইম নোটিফিকেশন</li>
+                <li><i class="fas fa-check-circle"></i> কাস্টম চেকআউট পেজ</li>
+                <li><i class="fas fa-check-circle"></i> ড্যাশবোর্ড অ্যাক্সেস</li>
+                <li><i class="fas fa-check-circle"></i> প্রিমিয়াম সাপোর্ট</li>
+            </ul>
+
+            <a href="#" class="btn">এখনই শুরু করুন</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 <b>SoftEPay</b>. All Rights Reserved.</p>
+        <p style="font-size: 0.8rem; margin-top: 10px;">Powered by Ahyan Creations LTD</p>
+    </footer>
+
+</body>
+</html>
